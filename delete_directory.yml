@@ -1,0 +1,12 @@
+
+---
+
+  -  name: Crate a directory playbook
+     hosts: all
+     become: true
+     tasks:
+
+       - name: Create directory
+         file:
+            path: /home/ansadmin/directory1
+            state: absent
